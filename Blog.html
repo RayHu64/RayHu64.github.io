@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+ ! Excerpted from "HTML5 and CSS3",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/bhh5 for more book information.
+-->
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      document.createElement("nav");
+      document.createElement("header");
+      document.createElement("footer");
+      document.createElement("section");
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <title>Ray Hu's AwesomeCo Blog</title>
+    <script src="HW4.js"></script>
+  </head>
+
+  <body>
+      <header id="page_header"> 
+        <h1>Ray Hu's Blog!</h1>
+        <div id="message">Hover over an image</div>
+        
+        <img class ="preview" alt = "Cat" src = "https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697"
+        onmouseover = "showProperties(this)"
+        onmouseleave = "showMyPicture()">
+
+        <img class ="preview" alt = "Happy-dog" src = "https://i.pinimg.com/originals/a3/cf/ce/a3cfce855a833b760b5a8cc34a1f4cd1.jpg"
+        onmouseover = "showProperties(this)"
+        onmouseleave = "showMyPicture()">
+        
+        <img class ="preview" alt = "Eating-rabbit" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8B9Xl8MWnRvHwiAuvvRy8Gf2H822NVt7NA&usqp=CAU"
+        onmouseover = "showProperties(this)"
+        onmouseleave = "showMyPicture()">
+        
+
+        <nav> 
+          <ul>
+            <li><a href="http://www1.pu.edu.tw/~s1071527/HW1/Self-Introduction.html">個人檔案</a></li>
+            <li><a href="http://www1.pu.edu.tw/~s1071527/HW2/Resume.html">個人履歷</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+      <section id="posts">
+        <article class="post">
+          <header>
+            <h2>Welcome! This is my test blog.</h2>
+            <p>Posted by Ray on 
+              <time datetime="2020-04-10T16:45">April 10th, 2020 at 16:45PM</time>
+            </p>
+          </header>
+          <aside>
+            <p>
+              &quot;What Doesn't Kill You Makes You Stronger.&quot;
+            </p>
+          </aside>
+          <p>
+            In this page you will find out there's noting interest to see. Just my home work that I use little efford to do. Professor didn't asked us to use JavaScripts to code this page. so I won't add any cool special effects or interactive elements in order to save me some time.
+          </p>
+          <p>
+           
+           &quot;I love you.&quot;
+          </p>
+          <footer>
+            <p><a href=""><i>25 Comments</i></a> ...</p>
+          </footer>
+        </article>
+      </section>
+      
+      <section id="sidebar">
+        <nav>
+          <h3>Archives</h3>
+          <ul>
+            <li><a href="http://www1.pu.edu.tw/~s1071527/HW1/Self-Introduction.html">HW1</a></li>
+            <li><a href="http://www1.pu.edu.tw/~s1071527/HW2/Resume.html">HW2</a></li>
+            <li><button type="button" onclick="openMe()">Open 我的帥照</button></li>
+            <li><button type="button" onclick="closeMe()">Close 我的帥照</button></li>
+            <li><button type="button" onclick="openClass()">Open 課表</button></li>
+            <li><button type="button" onclick="closeClass()">close 課表</button></li>
+          </ul>
+        </nav>
+    	</section> 
+      
+      <footer id="page_footer">
+        <p>&copy; 2020 Ray Hu.</p>
+        <nav>
+          <ul>   
+            <li><a href="http://www1.pu.edu.tw/~s1071527/">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </nav>
+      </footer>
+      
+  </body>
+</html>
+
