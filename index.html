@@ -22,11 +22,27 @@
     <![endif]-->
     <link rel="stylesheet" href="style.css" type="text/css"> 
     <title>Ray Hu's AwesomeCo Blog</title>
+    <script src="HW4.js"></script>
   </head>
 
   <body>
       <header id="page_header"> 
         <h1>Ray Hu's Blog!</h1>
+        <div id="message">Hover over an image</div>
+        
+        <img class ="preview" alt = "Cat" src = "https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697"
+        onmouseover = "showProperties(this)"
+        onmouseleave = "showMyPicture()">
+
+        <img class ="preview" alt = "Happy-dog" src = "https://i.pinimg.com/originals/a3/cf/ce/a3cfce855a833b760b5a8cc34a1f4cd1.jpg"
+        onmouseover = "showProperties(this)"
+        onmouseleave = "showMyPicture()">
+        
+        <img class ="preview" alt = "Eating-rabbit" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8B9Xl8MWnRvHwiAuvvRy8Gf2H822NVt7NA&usqp=CAU"
+        onmouseover = "showProperties(this)"
+        onmouseleave = "showMyPicture()">
+        
+
         <nav> 
           <ul>
             <li><a href="http://www1.pu.edu.tw/~s1071527/HW1/Self-Introduction.html">個人檔案</a></li>
@@ -67,7 +83,10 @@
           <ul>
             <li><a href="http://www1.pu.edu.tw/~s1071527/HW1/Self-Introduction.html">HW1</a></li>
             <li><a href="http://www1.pu.edu.tw/~s1071527/HW2/Resume.html">HW2</a></li>
-            
+            <li><button type="button" onclick="openMe()">Open 我的帥照</button></li>
+            <li><button type="button" onclick="closeMe()">Close 我的帥照</button></li>
+            <li><button type="button" onclick="openClass()">Open 課表</button></li>
+            <li><button type="button" onclick="closeClass()">close 課表</button></li>
           </ul>
         </nav>
     	</section> 
